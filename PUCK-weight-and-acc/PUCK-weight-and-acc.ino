@@ -9,7 +9,7 @@
 // https://RandomNerdTutorials.com/esp-now-esp32-arduino-ide/ by Rui Santos
 // Time-Series Signal Processing by Rong-Hao Liang: r.liang@tue.nl
 //*********************************************************************************************************
-//sender mac address: 78:E3:6D:10:C1:30
+
 
 #include "./fsr.h"
 #include "./mpu.h"

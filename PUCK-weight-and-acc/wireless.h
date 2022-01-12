@@ -13,12 +13,12 @@
 
 #include "./data.h"
 //BLUETOOTH SENDER CONNECTION --> using ESP_NOW
-uint8_t broadcastAddress[] = {0x84, 0xCC, 0xA8, 0x5A, 0x40, 0x58};  // REPLACE WITH YOUR RECEIVER MAC Address --> you can use the first part this tutorial: https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/
+uint8_t broadcastAddress[] = {0xXX, 0xXX, 0xXX, 0xXX, 0xXX, 0xXX};  // REPLACE WITH YOUR RECEIVER MAC Address --> you can use the first part this tutorial: https://randomnerdtutorials.com/esp-now-esp32-arduino-ide/
 
 // callback when data is sent
 void OnDataSent(const uint8_t *mac_addr, esp_now_send_status_t status) {
   Serial.print("\r\nLast Packet Send Status:\t");
-  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail");
+  Serial.println(status == ESP_NOW_SEND_SUCCESS ? "Delivery Success" : "Delivery Fail"); //check
 }
 
 static void initWireless() {
